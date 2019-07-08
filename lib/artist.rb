@@ -6,10 +6,18 @@ def initialize(name)
   @song = []
 end
 
-def add_song_by_name(name, genre)
+def add_song_by_name(name)
    song = Song.new
    @song << song
    song.artist = self
+end
+
+def songs
+  @songs
+end
+
+def song_count
+  @songs.count
 end
 
 
