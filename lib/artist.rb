@@ -1,8 +1,9 @@
 class Artist
  attr_accessor :name, :genre
-
+@@all = []
 def initialize(name)
   @name = name
+  @@all << @name if !@@all.include(@name)
   @songs = []
 end
 
