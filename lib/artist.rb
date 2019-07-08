@@ -21,7 +21,8 @@ def songs
 end
 
 def self.song_count
-  @songs.count
+  Self.each do |songs|
+    @songs.count
 end
 
 
