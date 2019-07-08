@@ -21,7 +21,7 @@ def songs
 end
 
 def self.song_count
-  @songs.count
+  Artist.songs.count
 end
 
 
