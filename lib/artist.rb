@@ -1,9 +1,8 @@
 class Artist
  attr_accessor :name, :genre
-@@all = []
+
 def initialize(name)
   @name = name
-  @@all << self
   @songs = []
 end
 
@@ -22,11 +21,7 @@ def songs
 end
 
 def self.song_count
- total = 0
-  @@all.each do |artist|
-    total + artist.songs.count
-  end
- total
+ Self.songs.count
 end
 
 
