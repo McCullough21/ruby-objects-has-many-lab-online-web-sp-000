@@ -3,7 +3,7 @@ class Artist
 @@all = []
 def initialize(name)
   @name = name
-  @@all << name if !@@all.include(@name)
+  @@all << name if !@@all.include(name)
   @songs = []
 end
 
